@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spin to Win</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo-container" id="promoContainer">
+  <div class="close-btn" onclick="closePopup()">×</div>
+  <div class="left">
+    <div class="wheel-container">
+      <div class="wheel" id="wheel">
+        <div class="label">
+          <span style="--angle: 22.5deg">25% OFF</span>
+          <span style="--angle: 67.5deg">15% OFF</span>
+          <span style="--angle: 112.5deg">10% OFF</span>
+          <span style="--angle: 157.5deg">Free Shipping</span>
+          <span style="--angle: 202.5deg">Almost</span>
+          <span style="--angle: 247.5deg">Try Again</span>
+          <span style="--angle: 292.5deg">Not Quite</span>
+          <span style="--angle: 337.5deg">Bonus Gift</span>
+        </div>
+      </div>
+      <div class="pointer"></div>
+    </div>
+  </div>
+  <div class="right">
+    <h2>Your Special Bonus Offer Has Been Unlocked!</h2>
+    <p>Are you ready to try your luck? Enter your email address below for a chance to spin the wheel and save big on your next purchase!</p>
+    <div class="email-section">
+      <input type="email" id="emailInput" placeholder="Enter your email here..." />
+      <button id="unlockBtn">Try Your Luck!</button>
+      <div class="message" id="message"></div>
+    </div>
+  </div>
+</div>
+<div id="finalMessage">🎁 Your special offer will automatically be applied to your cart!</div>
+<script src="script.js"></script>
+</body>
+</html>
